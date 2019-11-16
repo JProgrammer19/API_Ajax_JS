@@ -1,0 +1,21 @@
+#content{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#info{
+    background-color:#F1F1F3;
+    width: 300px;
+    margin: 15px;
+    padding-left:10px;
+    display: block;
+    
+}
+h1{
+    color:#4CAF4C;
+}
+
+h2{
+    color:#000;
+}

@@ -13,6 +13,7 @@
         const URI = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + ID_LUGAR + "&key=" + CLAVE_API_GOOGLE_PLACES;
 
         function cargarInfoSitio() {
+
             xmlHttp = new XMLHttpRequest();
             xmlHttp.onreadystatechange = procesarEventosRecibir;
             xmlHttp.open('GET', URI, true);
@@ -20,6 +21,7 @@
         }
 
         function procesarEventosRecibir() {
+
             if (xmlHttp.readyState == 4) {
                 if (xmlHttp.status == 200) {
                     var cuerpo = xmlHttp.responseText;
@@ -37,7 +39,6 @@
                     var horarioString = horario.toString();
                     var arrHorario = horarioString.split(',');
                     horario_ordenado(arrHorario);
-
 
                 } else {
                     console.log("error " + xmlHttp.status);
